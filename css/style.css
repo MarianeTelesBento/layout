@@ -79,7 +79,7 @@ body {
     flex-direction: column;
 }
 /*Alteração de cores*/
-    .wrapper:before{
+.wrapper:before, .main-page{
     /* background:#8b5cf6 !important; */
     /* background: #f6f7fb !important; */
     background: linear-gradient(
@@ -112,4 +112,14 @@ body {
 .list-group-item.list-group-item-action.active {
     background-color: #8b5cf6 !important;
     border-color: #8b5cf6 !important;
+}
+
+.btn-outline-dark{
+    color: #8b5cf6 !important;
+    border-color: #8b5cf6 !important;
+}
+
+.btn-outline-dark:hover{
+    color: #fff !important;
+    background-color: #8b5cf6 !important;
 }
