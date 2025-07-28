@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<!-- Mirrored from spark.bootlab.io/dashboard-default by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Nov 2024 15:02:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
+		<meta name="author" content="Bootlab">
+		
+		<title>Trax IA</title>
+
+		<link rel="stylesheet" href="css/style.css">
+
+		
+		<script src="js/settings.js"></script>
+		<!-- END SETTINGS -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-7"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-120946860-7');
+		</script>
+	</head>
+
+	<body>
+		<div class="splash active">
+			<div class="splash-icon"></div>
+		</div>
+
+		<div class="wrapper">
+			<nav id="sidebar" class="sidebar">
+				<a class='sidebar-brand' href='index.html'>
+					<i class="align-middle me-2 fas fa-fw fa-globe "></i>
+					Trax
+				</a>
+				<div class="sidebar-content">
+					<div class="sidebar-user">
+						<img src="img/avatars/avatar.jpg" class="img-fluid rounded-circle mb-2" alt="Linda Miller" />
+						<div class="fw-bold icon-purple">Linda Miller</div>
+						<small>Plano premium</small>
+					</div>
+
+					<ul class="sidebar-nav">
+						<li class="sidebar-header">
+							Insights IA
+						</li>
+						<li class="sidebar-item  active"><!--active-->
+							<a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link ">
+								<i class="align-middle me-2 fas fa-fw fa-search icon-purple"></i> <span class="align-middle">Busca de Ncm</span>
+							</a>
+							<ul id="dashboards" class="sidebar-dropdown list-unstyled collapse show " data-bs-parent="#sidebar">
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Cógido NCM:</label>
+										<input type="text" class="form-control" placeholder="Digite o código NCM">
+									</div>
+								</li>
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Importador:</label>
+										<input type="text"
+												class="form-control" 
+												placeholder="Importador">
+									</div>
+								</li>
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Exportador:</label>
+										<input type="text"
+												class="form-control" 
+												placeholder="Exportador">
+									</div>
+								</li>
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Pais de origem:</label>
+										<input type="text"
+												class="form-control" 
+												placeholder="Pais de origem">
+									</div>
+								</li>
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Pais de destino:</label>
+										<input type="text"
+												class="form-control" 
+												placeholder="Pais de destino">
+									</div>
+								</li>
+
+								<li class=" sidebar-header-period" >
+									<div class="px-3 py-2">
+										Período:
+									</div>
+								</li>
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">De:</label>
+										<input class="form-control" type="text" name="datesingle" />
+									</div>
+								</li>
+								
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Até:</label>
+										<input class="form-control" type="text" name="datesingle" />
+									</div>
+								</li>
+								<li class="sidebar-item m-3">
+									<button type="submit" class="btn btn-primary w-100 m">Buscar</button>	
+								</li>								
+							</ul>
+						</li>
+						<li class="sidebar-item">
+							<a data-bs-target="#container" data-bs-toggle="collapse" class="sidebar-link collapsed">
+								<i class="align-middle me-2 fas fa-fw fa-globe icon-purple "></i> <span class="align-middle">Container Tracking</span>
+							</a>
+							<ul id="container" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Código de Rastreio:</label>
+										<input type="text"
+												class="form-control" 
+												placeholder="Código Rastreio">
+									</div>
+								</li>
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Transportadora:</label>
+										<select class="form-select flex-grow-1">
+												<option>Escolha uma transportadora...</option>
+												<option>GLS Italy</option>
+												<option>Cirro</option>
+											</select>	
+									</div>
+								</li>
+
+								<li class="sidebar-item m-3">
+									<button type="submit" class="btn btn-primary w-100 m">Buscar</button>	
+								</li>							
+							</ul>
+						</li>
+						<li class="sidebar-item">
+							<a data-bs-target="#especialista" data-bs-toggle="collapse" class="sidebar-link collapsed">
+								<i class="align-middle me-2 fas fa-fw fa-file icon-purple "></i> <span class="align-middle">Compliance</span>
+							</a>
+							<ul id="especialista" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							</ul>
+						</li>
+						<li class="sidebar-item">
+							<a data-bs-target="#fabricante" data-bs-toggle="collapse" class="sidebar-link collapsed">
+								<i class="align-middle me-2 fas fa-fw fa-flask icon-purple "></i> <span class="align-middle">Container load</span>
+							</a>
+							<ul id="fabricante" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="main">
+				<nav class="navbar navbar-expand navbar-theme">
+					<a class="sidebar-toggle d-flex me-2">
+						<i class="hamburger align-self-center"></i>
+					</a>
+
+					<form class="d-none d-sm-inline-block">
+						<input class="form-control border-0 bg-transparent" type="text" placeholder="Buscar Insights...">
+					</form>
+
+					<div class="navbar-collapse collapse">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item dropdown ms-lg-2">
+								<a class="nav-link dropdown-toggle position-relative text-dark" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+									<i class="align-middle fas fa-bell text-dark"></i>
+									<span class="indicator"></span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+									<div class="dropdown-menu-header text-dark">
+										4 Novas Notificações
+									</div>
+									<div class="list-group">
+										<a href="#" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<i class="ms-1 text-danger fas fa-fw fa-bell"></i>
+												</div>
+												<div class="col-10">
+													<div class="text-dark">Update completed</div>
+													<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+													<div class="text-muted small mt-1">2h ago</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<i class="ms-1 text-warning fas fa-fw fa-envelope-open"></i>
+												</div>
+												<div class="col-10">
+													<div class="text-dark">Lorem ipsum</div>
+													<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+													<div class="text-muted small mt-1">6h ago</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<i class="ms-1 text-purple fas fa-fw fa-building"></i>
+												</div>
+												<div class="col-10">
+													<div class="text-dark">Login from 192.186.1.1</div>
+													<div class="text-muted small mt-1">8h ago</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<i class="ms-1 text-success fas fa-fw fa-bell-slash"></i>
+												</div>
+												<div class="col-10">
+													<div class="text-dark">New connection</div>
+													<div class="text-muted small mt-1">Anna accepted your request.</div>
+													<div class="text-muted small mt-1">12h ago</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="dropdown-menu-footer">
+										<a href="#" class="text-muted">Mostrar todas as notificações</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown ms-lg-2">
+								<a class="nav-link dropdown-toggle position-relative text-dark" href="#" id="userDropdown" data-bs-toggle="dropdown">
+									<i class="align-middle fas fa-cog text-dark"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<a class="dropdown-item text-dark" href="#"><i class="align-middle me-1 fas fa-fw fa-user text-dark"></i> Minha conta</a>
+									<a class="dropdown-item text-dark" href="#"><i class="align-middle me-1 fas fa-fw fa-comments text-dark"></i> Subscrição</a>
+									<a class="dropdown-item text-dark" href="#"><i class="align-middle me-1 fas fa-fw fa-comments text-dark"></i> Ajuda</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-dark" href="#"><i class="align-middle me-1 fas fa-fw fa-arrow-alt-circle-right text-dark"></i> Sair</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<main class="content">
+					<div class="container-fluid">
+
+						<div class="row mt-n3">
+							<div class="col-md-11 col-lg-10 col-xl-9 col-xxl-8 mx-auto position-relative">
+								<h1 class="text-center header-title text-body">Nós temos uma oferta para todos</h1>
+								<p class="lead text-center mb-4 header-subtitle text-dark">Seja você uma empresa ou um indivíduo, teste gratuito de 14 dias sem necessidade de cartão de crédito.</p>
+
+								<div class="row justify-content-center mt-3 mb-2">
+									<div class="col-auto">
+										<nav class="nav btn-group">
+											<a href="#monthly" class="btn btn-primary active" data-bs-toggle="tab">Cobrança mensal</a>
+											<a href="#annual" class="btn btn-light" data-bs-toggle="tab">Cobrança anual</a>
+										</nav>
+									</div>
+								</div>
+
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="monthly">
+										<div class="row py-4">
+											<div class="col-md-4 mb-3 mb-md-0">
+												<div class="card text-center h-100">
+													<div class="card-body d-flex flex-column">
+														<div class="mb-4">
+															<h5>Free</h5>
+															<span class="display-4">R$0</span>
+														</div>
+														<h6>Inclui:</h6>
+														<ul class="list-unstyled">
+															<li class="mb-2">
+																1 usuário
+															</li>
+															<li class="mb-2">
+																5 projetos
+															</li>
+															<li class="mb-2">
+																5 GB de armazenamento
+															</li>
+														</ul>
+														<div class="mt-auto">
+															<a href="#" class="btn btn-lg btn-outline-primary">Sign up</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4 mb-3 mb-md-0">
+												<div class="card text-center h-100">
+													<div class="card-body d-flex flex-column">
+														<div class="mb-4">
+															<h5>Standard</h5>
+															<span class="display-4">R$19</span>
+															<span>/mês</span>
+														</div>
+														<h6>Inclui:</h6>
+														<ul class="list-unstyled">
+															<li class="mb-2">
+																5 usuários
+															</li>
+															<li class="mb-2">
+																50 projetos
+															</li>
+															<li class="mb-2">
+																50 GB de armazenamento
+															</li>
+															<li class="mb-2">
+																Política de segurança
+															</li>
+															<li class="mb-2">
+																Cópias de segurança semanais
+															</li>
+														</ul>
+														<div class="mt-auto">
+															<a href="#" class="btn btn-lg btn-primary">Try it for free</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4 mb-3 mb-md-0">
+												<div class="card text-center h-100">
+													<div class="card-body d-flex flex-column">
+														<div class="mb-4">
+															<h5>Plus</h5>
+															<span class="display-4">R$39</span>
+															<span>/mês</span>
+														</div>
+														<h6>Inclui:</h6>
+														<ul class="list-unstyled">
+															<li class="mb-2">
+																Usuários ilimitados
+															</li>
+															<li class="mb-2">
+																Projetos ilimitados
+															</li>
+															<li class="mb-2">
+																250 GB de armazenamento
+															</li>
+															<li class="mb-2">
+																Atendimento prioritário
+															</li>
+															<li class="mb-2">
+																Política de segurança
+															</li>
+															<li class="mb-2">
+																Backups diários
+															</li>
+															<li class="mb-2">
+																CSS personalizado
+															</li>
+														</ul>
+														<div class="mt-auto">
+															<a href="#" class="btn btn-lg btn-outline-primary">Try it for free</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="annual">
+										<div class="row py-4">
+											<div class="col-sm-4 mb-3 mb-md-0">
+												<div class="card text-center h-100">
+													<div class="card-body d-flex flex-column">
+														<div class="mb-4">
+															<h5>Free</h5>
+															<span class="display-4">R$0</span>
+														</div>
+														<h6>Includes:</h6>
+														<ul class="list-unstyled">
+															<li class="mb-2">
+																1 usuário
+															</li>
+															<li class="mb-2">
+																5 projetos
+															</li>
+															<li class="mb-2">
+																5 GB de armazenamento
+															</li>
+														</ul>
+														<div class="mt-auto">
+															<a href="#" class="btn btn-lg btn-outline-primary">Sign up</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-4 mb-3 mb-md-0">
+												<div class="card text-center h-100">
+													<div class="card-body d-flex flex-column">
+														<div class="mb-4">
+															<h5>Standard</h5>
+															<span class="display-4">R$199</span>
+															<span class="text-small4">/mês</span>
+														</div>
+														<h6>Inclui:</h6>
+														<ul class="list-unstyled">
+															<li class="mb-2">
+																5 usuários
+															</li>
+															<li class="mb-2">
+																50 projetos
+															</li>
+															<li class="mb-2">
+																50 GB de armazenamento
+															</li>
+															<li class="mb-2">
+																Política de segurança
+															</li>
+															<li class="mb-2">
+																Backups semanais
+															</li>
+														</ul>
+														<div class="mt-auto">
+															<a href="#" class="btn btn-lg btn-primary">Try it for free</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-4 mb-3 mb-md-0">
+												<div class="card text-center h-100">
+													<div class="card-body d-flex flex-column">
+														<div class="mb-4">
+															<h5>Plus</h5>
+															<span class="display-4">R$399</span>
+															<span>/mês</span>
+														</div>
+														<h6>Inclui:</h6>
+														<ul class="list-unstyled">
+															<li class="mb-2">
+																Usuários ilimitados
+															</li>
+															<li class="mb-2">
+																Projetos ilimitados
+															</li>
+															<li class="mb-2">
+																250 GB de armazenamento
+															</li>
+															<li class="mb-2">
+																Atendimento prioritário
+															</li>
+															<li class="mb-2">
+																Política de segurança
+															</li>
+															<li class="mb-2">
+																Backups diários
+															</li>
+															<li class="mb-2">
+																CSS personalizado
+															</li>
+														</ul>
+														<div class="mt-auto">
+															<a href="#" class="btn btn-lg btn-outline-primary">Try it for free</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<hr />
+
+								<div class="text-center my-4">
+									<h2>Perguntas frequentes</h2>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="card">
+											<div class="card-body">
+												<h5 class="h6 card-title">Preciso de um cartão de crédito para me inscrever?</h5>
+												<p class="mb-0">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+													libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
+													pulvinar, hendrerit id, lorem.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="card">
+											<div class="card-body">
+												<h5 class="h6 card-title">Vocês oferecem um teste gratuito?</h5>
+												<p class="mb-0">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+													libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
+													pulvinar, hendrerit id, lorem.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="card">
+											<div class="card-body">
+												<h5 class="h6 card-title">E se eu decidir cancelar meu plano?</h5>
+												<p class="mb-0">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+													libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
+													pulvinar, hendrerit id, lorem.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="card">
+											<div class="card-body">
+												<h5 class="h6 card-title">Posso cancelar o plano a qualquer momento?</h5>
+												<p class="mb-0">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+													libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
+													pulvinar, hendrerit id, lorem.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+				<footer class="footer">
+					<div class="container-fluid">
+						<div class="row text-muted">
+							<div class="col-8 text-start">
+								<ul class="list-inline">
+									<li class="list-inline-item">
+										<a class="text-muted" href="#">Suporte</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="#">Privacidade</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="#">Termos de Serviço</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="#">Contato</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-4 text-end">
+								<p class="mb-0">
+									&copy; 2025 - <a class='text-muted' href='dashboard-default.html'>Trax</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<svg width="0" height="0" style="position:absolute">
+			<defs>
+				<symbol viewBox="0 0 512 512" id="ion-ios-pulse-strong">
+					<path
+						d="M448 273.001c-21.27 0-39.296 13.999-45.596 32.999h-38.857l-28.361-85.417a15.999 15.999 0 0 0-15.183-10.956c-.112 0-.224 0-.335.004a15.997 15.997 0 0 0-15.049 11.588l-44.484 155.262-52.353-314.108C206.535 54.893 200.333 48 192 48s-13.693 5.776-15.525 13.135L115.496 306H16v31.999h112c7.348 0 13.75-5.003 15.525-12.134l45.368-182.177 51.324 307.94c1.229 7.377 7.397 11.92 14.864 12.344.308.018.614.028.919.028 7.097 0 13.406-3.701 15.381-10.594l49.744-173.617 15.689 47.252A16.001 16.001 0 0 0 352 337.999h51.108C409.973 355.999 427.477 369 448 369c26.511 0 48-22.492 48-49 0-26.509-21.489-46.999-48-46.999z">
+					</path>
+				</symbol>
+			</defs>
+		</svg>
+		<script src="js/app.js"></script>
+
+	</body>
+
+
+	<!-- Mirrored from spark.bootlab.io/pages-pricing by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Nov 2024 15:02:53 GMT -->
+	</html>

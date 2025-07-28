@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<!-- Mirrored from spark.bootlab.io/dashboard-default by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Nov 2024 15:02:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
+		<meta name="author" content="Bootlab">
+		
+		<title>Trax IA</title>
+
+		<link rel="stylesheet" href="css/style.css">
+
+		
+		<script src="js/settings.js"></script>
+		<!-- END SETTINGS -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-7"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-120946860-7');
+		</script>
+	</head>
+
+	<body>
+		<div class="splash active">
+			<div class="splash-icon"></div>
+		</div>
+
+		<div class="wrapper">
+			<nav id="sidebar" class="sidebar">
+				<a class='sidebar-brand' href='index.html'>
+					<i class="align-middle me-2 fas fa-fw fa-globe "></i>
+					Trax
+				</a>
+				<div class="sidebar-content">
+					<div class="sidebar-user">
+						<img src="img/avatars/avatar.jpg" class="img-fluid rounded-circle mb-2" alt="Linda Miller" />
+						<div class="fw-bold icon-purple">Linda Miller</div>
+						<small>Plano premium</small>
+					</div>
+
+					<ul class="sidebar-nav">
+						<li class="sidebar-header">
+							Insights IA
+						</li>
+						<li class="sidebar-item  active"><!--active-->
+							<a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link ">
+								<i class="align-middle me-2 fas fa-fw fa-search icon-purple"></i> <span class="align-middle">Busca de Ncm</span>
+							</a>
+							<ul id="dashboards" class="sidebar-dropdown list-unstyled collapse show " data-bs-parent="#sidebar">
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Cógido NCM:</label>
+										<input type="text" class="form-control" placeholder="Digite o código NCM">
+									</div>
+								</li>
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Importador:</label>
+										<input type="text"
+												class="form-control" 
+												placeholder="Importador">
+									</div>
+								</li>
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Exportador:</label>
+										<input type="text"
+												class="form-control" 
+												placeholder="Exportador">
+									</div>
+								</li>
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Pais de origem:</label>
+										<input type="text"
+												class="form-control" 
+												placeholder="Pais de origem">
+									</div>
+								</li>
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Pais de destino:</label>
+										<input type="text"
+												class="form-control" 
+												placeholder="Pais de destino">
+									</div>
+								</li>
+
+								<li class=" sidebar-header-period" >
+									<div class="px-3 py-2">
+										Período:
+									</div>
+								</li>
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">De:</label>
+										<input class="form-control" type="text" name="datesingle" />
+									</div>
+								</li>
+								
+
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Até:</label>
+										<input class="form-control" type="text" name="datesingle" />
+									</div>
+								</li>
+								<li class="sidebar-item m-3">
+									<button type="submit" class="btn btn-primary w-100 m">Buscar</button>	
+								</li>								
+							</ul>
+						</li>
+						<li class="sidebar-item">
+							<a data-bs-target="#container" data-bs-toggle="collapse" class="sidebar-link collapsed">
+								<i class="align-middle me-2 fas fa-fw fa-globe icon-purple "></i> <span class="align-middle">Container Tracking</span>
+							</a>
+							<ul id="container" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Código de Rastreio:</label>
+										<input type="text"
+												class="form-control" 
+												placeholder="Código Rastreio">
+									</div>
+								</li>
+								<li class="sidebar-item">
+									<div class="px-3 py-2">
+										<label class="form-label">Transportadora:</label>
+										<select class="form-select flex-grow-1">
+												<option>Escolha uma transportadora...</option>
+												<option>GLS Italy</option>
+												<option>Cirro</option>
+											</select>	
+									</div>
+								</li>
+
+								<li class="sidebar-item m-3">
+									<button type="submit" class="btn btn-primary w-100 m">Buscar</button>	
+								</li>							
+							</ul>
+						</li>
+						<li class="sidebar-item">
+							<a data-bs-target="#especialista" data-bs-toggle="collapse" class="sidebar-link collapsed">
+								<i class="align-middle me-2 fas fa-fw fa-file icon-purple "></i> <span class="align-middle">Compliance</span>
+							</a>
+							<ul id="especialista" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							</ul>
+						</li>
+						<li class="sidebar-item">
+							<a data-bs-target="#fabricante" data-bs-toggle="collapse" class="sidebar-link collapsed">
+								<i class="align-middle me-2 fas fa-fw fa-flask icon-purple "></i> <span class="align-middle">Container load</span>
+							</a>
+							<ul id="fabricante" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="main">
+				<nav class="navbar navbar-expand navbar-theme">
+					<a class="sidebar-toggle d-flex me-2">
+						<i class="hamburger align-self-center"></i>
+					</a>
+
+					<form class="d-none d-sm-inline-block">
+						<input class="form-control border-0 bg-transparent" type="text" placeholder="Buscar Insights...">
+					</form>
+
+					<div class="navbar-collapse collapse">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item dropdown ms-lg-2">
+								<a class="nav-link dropdown-toggle position-relative text-dark" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+									<i class="align-middle fas fa-bell text-dark"></i>
+									<span class="indicator"></span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+									<div class="dropdown-menu-header text-dark">
+										4 Novas Notificações
+									</div>
+									<div class="list-group">
+										<a href="#" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<i class="ms-1 text-danger fas fa-fw fa-bell"></i>
+												</div>
+												<div class="col-10">
+													<div class="text-dark">Update completed</div>
+													<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+													<div class="text-muted small mt-1">2h ago</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<i class="ms-1 text-warning fas fa-fw fa-envelope-open"></i>
+												</div>
+												<div class="col-10">
+													<div class="text-dark">Lorem ipsum</div>
+													<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+													<div class="text-muted small mt-1">6h ago</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<i class="ms-1 text-purple fas fa-fw fa-building"></i>
+												</div>
+												<div class="col-10">
+													<div class="text-dark">Login from 192.186.1.1</div>
+													<div class="text-muted small mt-1">8h ago</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<i class="ms-1 text-success fas fa-fw fa-bell-slash"></i>
+												</div>
+												<div class="col-10">
+													<div class="text-dark">New connection</div>
+													<div class="text-muted small mt-1">Anna accepted your request.</div>
+													<div class="text-muted small mt-1">12h ago</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="dropdown-menu-footer">
+										<a href="#" class="text-muted">Mostrar todas as notificações</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown ms-lg-2">
+								<a class="nav-link dropdown-toggle position-relative text-dark" href="#" id="userDropdown" data-bs-toggle="dropdown">
+									<i class="align-middle fas fa-cog text-dark"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<a class="dropdown-item text-dark" href="#"><i class="align-middle me-1 fas fa-fw fa-user text-dark"></i> Minha conta</a>
+									<a class="dropdown-item text-dark" href="#"><i class="align-middle me-1 fas fa-fw fa-comments text-dark"></i> Subscrição</a>
+									<a class="dropdown-item text-dark" href="#"><i class="align-middle me-1 fas fa-fw fa-comments text-dark"></i> Ajuda</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-dark" href="#"><i class="align-middle me-1 fas fa-fw fa-arrow-alt-circle-right text-dark"></i> Sair</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<main class="content">
+					<div class="container-fluid">
+						<div class="header #fff">
+							<h1 class="header-title text-body">Bem vinda, Linda!</h1>
+							<p class="header-subtitle text-dark">Você tem 24 novas mensagens...</p>
+						</div>
+
+						<div class="d-flex justify-content-between flex-wrap gap-3 mb-4">
+							<div class="card flex-fill" style="min-width: 300px;">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-auto">
+											<div class="avatar">
+												<div class="avatar-title rounded-circle bg-warning-light">
+													<i class="align-middle" data-feather="box"></i>
+												</div>
+											</div>
+										</div>
+										<div class="col">
+											<h5 class="card-title mb-0">$99,264 USD</h5>
+											<p class="card-text">Total Métrico FOB</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="card flex-fill" style="min-width: 300px;">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-auto">
+											<div class="avatar">
+												<div class="avatar-title rounded-circle bg-info-light">
+													<i class="align-middle" data-feather="package"></i>
+												</div>
+											</div>
+										</div>
+										<div class="col">
+											<h5 class="card-title mb-0">3279.76 KG</h5>
+											<p class="card-text">Total Métrico KG</p>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+
+						<div class="row row-equal">
+							<div class="col-12 col-lg-6">
+								<div class="card flex-fill w-100 equal-height">
+									<div class="card-header">
+										<h5 class="card-title mb-0">Import Trends</h5>
+									</div>
+									<div class="card-body py-3">
+										<div class="chart chart-sm">
+											<canvas id="importChart" width="400" height="250"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-lg-6">
+								<div class="card flex-fill w-100 equal-height">
+									<div class="card-header">
+										<h5 class="card-title mb-0">Shipments</h5>
+									</div>
+									<div class="card-body">
+										<table class="table table-striped my-0">
+											<thead>
+												<tr>
+													<th>Consignee Name</th>
+													<th>Shipper Name</th>
+													<th>Country of Import</th>
+													<th>Country of Export</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><i class="fas fa-circle text-danger fa-fw"></i> KERRY EXPRESS (THAILAND) PUBLIC COMPANY LIMITED</td>
+													<td><i class="fas fa-circle text-danger fa-fw"></i> PT.DWITAMA GLOBAL PERSADA</td>
+													<td><img src="https://flagcdn.com/w20/th.png" alt="Thailand flag" width="20"> Thailand</td>
+													<td><img src="https://flagcdn.com/w20/id.png" alt="Indonesia flag" width="20"> Indonesia</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-circle text-warning fa-fw"></i> YAMAHA CORPORATION OF AMERICA</td>
+													<td><i class="fas fa-circle text-danger fa-fw"></i> PT.Yamaha Music Manufacturing Asia</td>
+													<td><img src="https://flagcdn.com/w20/jp.png" alt="Japan flag" width="20"> Japan</td>
+													<td><img src="https://flagcdn.com/w20/id.png" alt="Indonesia flag" width="20"> Indonesia</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-circle text-info fa-fw"></i> MACROLINK EXPRESS (M) SDN. BHD.</td>
+													<td><i class="fas fa-circle text-danger fa-fw"></i> PT.DWITAMA GLOBAL PERSADA</td>
+													<td><img src="https://flagcdn.com/w20/my.png" alt="Malaysia flag" width="20"> Malaysia</td>
+													<td><img src="https://flagcdn.com/w20/id.png" alt="Indonesia flag" width="20"> Indonesia</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-circle text-success fa-fw"></i> GUMPO HLONIPHANI</td>
+													<td><i class="fas fa-circle text-secondary fa-fw"></i> LA MODE TRADING PROPRIETARY LIMITED</td>
+													<td><img src="https://flagcdn.com/w20/zw.png" alt="Zimbabwe flag" width="20"> Zimbabwe</td>
+													<td><img src="https://flagcdn.com/w20/bw.png" alt="Botswana flag" width="20"> Botswana</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-circle text-primary fa-fw"></i> QUANTIUM SOLUTIONS HONG KONG LIMITED</td>
+													<td><i class="fas fa-circle text-danger fa-fw"></i> PT.DWITAMA GLOBAL PERSADA</td>
+													<td><img src="https://flagcdn.com/w20/hk.png" alt="Hong Kong flag" width="20"> Hong Kong</td>
+													<td><img src="https://flagcdn.com/w20/id.png" alt="Indonesia flag" width="20"> Indonesia</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 col-lg-12">
+								<div class="card flex-fill w-100">
+									<div class="card-header">
+										<h5 class="card-title mb-0">Importers</h5>
+									</div>
+									<div class="card-body">
+										<table class="table table-striped my-0">
+											<thead>
+												<tr>
+													<th>Company</th>
+													<th>Shipments</th>
+													<th>Weight(kg)</th>
+													<th>Value(USD)</th>
+													<th>Country</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><i class="fas fa-circle text-warning fa-fw"></i> GUITARTNET, INC</td>
+													<td>13</td>
+													<td>1338 KG</td>
+													<td>$23,037 USD</td>
+													<td><img src="https://flagcdn.com/w20/kr.png" alt="South Korea flag" width="20"> KOREA, REPUBLIC OF</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-circle text-danger fa-fw"></i> YAMAHA MUSIC JAPAN CO, LTD (JM DIVISION)</td>
+													<td>3</td>
+													<td>500.4 KG</td>
+													<td>$22,068 USD</td>
+													<td><img src="https://flagcdn.com/w20/kr.png" alt="South Korea flag" width="20"> KOREA, REPUBLIC OF</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-circle text-info fa-fw"></i> THOMANN GMBH</td>
+													<td>3</td>
+													<td>675 KG</td>
+													<td>$18,796 USD</td>
+													<td><img src="https://flagcdn.com/w20/de.png" alt="Germany flag" width="20"> GERMANY</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-circle text-success fa-fw"></i> ANDERTONS MUSIC COMPANY</td>
+													<td>1</td>
+													<td>340 KG</td>
+													<td>$14,296 USD</td>
+													<td><img src="https://flagcdn.com/w20/kr.png" alt="South Korea flag" width="20"> KOREA, REPUBLIC OF</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-circle text-primary fa-fw"></i> XXapmxXX Guitars</td>
+													<td>1</td>
+													<td>0 KG</td>
+													<td>$9,980 USD</td>
+													<td><img src="https://flagcdn.com/w20/gb.png" alt="United Kingdom flag" width="20"> UNITED KINGDOM</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+
+				<footer class="footer">
+					<div class="container-fluid">
+						<div class="row text-muted">
+							<div class="col-8 text-start">
+								<ul class="list-inline">
+									<li class="list-inline-item">
+										<a class="text-muted" href="#">Suporte</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="#">Privacidade</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="#">Termos de Serviço</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="#">Contato</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-4 text-end">
+								<p class="mb-0">
+									&copy; 2025 - <a class='text-muted' href='dashboard-default.html'>Trax</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<svg width="0" height="0" style="position:absolute">
+			<defs>
+				<symbol viewBox="0 0 512 512" id="ion-ios-pulse-strong">
+					<path
+						d="M448 273.001c-21.27 0-39.296 13.999-45.596 32.999h-38.857l-28.361-85.417a15.999 15.999 0 0 0-15.183-10.956c-.112 0-.224 0-.335.004a15.997 15.997 0 0 0-15.049 11.588l-44.484 155.262-52.353-314.108C206.535 54.893 200.333 48 192 48s-13.693 5.776-15.525 13.135L115.496 306H16v31.999h112c7.348 0 13.75-5.003 15.525-12.134l45.368-182.177 51.324 307.94c1.229 7.377 7.397 11.92 14.864 12.344.308.018.614.028.919.028 7.097 0 13.406-3.701 15.381-10.594l49.744-173.617 15.689 47.252A16.001 16.001 0 0 0 352 337.999h51.108C409.973 355.999 427.477 369 448 369c26.511 0 48-22.492 48-49 0-26.509-21.489-46.999-48-46.999z">
+					</path>
+				</symbol>
+			</defs>
+		</svg>
+		<script src="js/app.js"></script>
+
+		<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					$("input[name=\"daterange\"]").daterangepicker({
+					opens: "left"
+				});
+				$("input[name=\"datetimes\"]").daterangepicker({
+					timePicker: true,
+					opens: "left",
+					startDate: moment().startOf("hour"),
+					endDate: moment().startOf("hour").add(32, "hour"),
+					locale: {
+						format: "M/DD hh:mm A"
+					}
+				});
+				$("input[name=\"datesingle\"]").daterangepicker({
+					singleDatePicker: true,
+					showDropdowns: true
+				});
+				var start = moment().subtract(29, "days");
+				var end = moment();
+
+				function cb(start, end) {
+					$("#reportrange span").html(start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY"));
+				}
+				$("#reportrange").daterangepicker({
+					startDate: start,
+					endDate: end,
+					ranges: {
+						"Today": [moment(), moment()],
+						"Yesterday": [moment().subtract(1, "days"), moment().subtract(1, "days")],
+						"Last 7 Days": [moment().subtract(6, "days"), moment()],
+						"Last 30 Days": [moment().subtract(29, "days"), moment()],
+						"This Month": [moment().startOf("month"), moment().endOf("month")],
+						"Last Month": [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")]
+					}
+				}, cb);
+				cb(start, end);
+				// Datetimepicker
+				$('#datetimepicker-minimum').datetimepicker();
+				$('#datetimepicker-view-mode').datetimepicker({
+					viewMode: 'years'
+				});
+				$('#datetimepicker-time').datetimepicker({
+					format: 'LT'
+				});
+				$('#datetimepicker-date').datetimepicker({
+					format: 'L'
+				});
+				
+				// Line chart
+				new Chart(document.getElementById("chartjs-dashboard-line"), {
+					type: 'line',
+					data: {
+						labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+						datasets: [{
+								label: "Orders",
+								fill: true,
+								backgroundColor: "#4B0082",
+								borderColor: "#4B0082",
+								borderWidth: 2,
+								data: [3, 2, 3, 5, 6, 5, 4, 6, 9, 10, 8, 9]
+							},
+							{
+								label: "Sales ($)",
+								fill: true,
+								backgroundColor: "rgba(0, 0, 0, 0.05)",
+								borderColor: "rgba(0, 0, 0, 0.05)",
+								borderWidth: 2,
+								data: [5, 4, 10, 15, 16, 12, 10, 13, 20, 22, 18, 20]
+							}
+						]
+					},
+					options: {
+						maintainAspectRatio: false,
+						legend: {
+							display: false
+						},
+						tooltips: {
+							intersect: false
+						},
+						hover: {
+							intersect: true
+						},
+						plugins: {
+							filler: {
+								propagate: false
+							}
+						},
+						elements: {
+							point: {
+								radius: 0
+							}
+						},
+						scales: {
+							xAxes: [{
+								reverse: true,
+								gridLines: {
+									color: "rgba(0,0,0,0.0)"
+								}
+							}],
+							yAxes: [{
+								ticks: {
+									stepSize: 5
+								},
+								display: true,
+								gridLines: {
+									color: "rgba(0,0,0,0)",
+									fontColor: "#fff"
+								}
+							}]
+						}
+					}
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				// Pie chart
+				new Chart(document.getElementById("chartjs-dashboard-pie"), {
+					type: 'pie',
+					data: {
+						labels: ["Chrome", "Firefox", "IE", "Other"],
+						datasets: [{
+							data: [4401, 4003, 1589],
+							backgroundColor: [
+									"#4B0082",
+								window.theme.warning,
+								window.theme.danger,
+								"#E8EAED"
+							],
+							borderColor: "transparent"
+						}]
+					},
+					options: {
+						responsive: !window.MSInputMethodContext,
+						maintainAspectRatio: false,
+						legend: {
+							display: false
+						},
+						cutoutPercentage: 75
+					}
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				// Bar chart
+				new Chart(document.getElementById("chartjs-dashboard-bar"), {
+					type: 'bar',
+					data: {
+						labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+						datasets: [{
+							label: "This year",
+							backgroundColor: "#4B0082",
+							borderColor: "#4B0082",
+							hoverBackgroundColor: "#4B0082",
+							hoverBorderColor: "#4B0082",
+							data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+							barPercentage: .75,
+							categoryPercentage: .5
+						}]
+					},
+					options: {
+						maintainAspectRatio: false,
+						legend: {
+							display: false
+						},
+						scales: {
+							yAxes: [{
+								gridLines: {
+									display: false
+								},
+								stacked: false,
+								ticks: {
+									stepSize: 20
+								}
+							}],
+							xAxes: [{
+								stacked: false,
+								gridLines: {
+									color: "transparent"
+								}
+							}]
+						}
+					}
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var map = new jsVectorMap({
+					map: "world",
+					selector: "#world_map",
+					zoomButtons: true,
+					selectedRegions: [
+						'US',
+						'SA',
+						'DE',
+						'FR',
+						'CN',
+						'AU',
+						'BR',
+						'IN',
+						'GB'
+					],
+					regionStyle: {
+						initial: {
+							fill: '#e4e4e4',
+							"fill-opacity": 0.9,
+							stroke: 'none',
+							"stroke-width": 0,
+							"stroke-opacity": 0
+						},
+						selected: {
+							fill: "#4B0082",
+						}
+					},
+					zoomOnScroll: false
+				});
+				window.addEventListener("resize", () => {
+					map.updateSize();
+				});
+				setTimeout(function() {
+					map.updateSize();
+				}, 250);
+			});
+		</script>
+		<script>
+			$(function() {
+				$('#datatables-dashboard-projects').DataTable({
+					pageLength: 6,
+					lengthChange: false,
+					bFilter: false,
+					autoWidth: false
+				});
+			});
+		</script>
+		<script>
+			$(function() {
+				$('#datetimepicker-dashboard').datetimepicker({
+					inline: true,
+					sideBySide: false,
+					format: 'L'
+				});
+			});
+		</script>
+
+		<script>
+		// Configuração do Chart.js para Import Trends
+		const ctx = document.getElementById("importChart").getContext("2d");
+		const importChart = new Chart(ctx, {
+			type: "line",
+			data: {
+			labels: [
+				"Oct",
+				"Nov",
+				"Dec",
+				"Jan",
+				"Feb",
+				"Mar",
+				"Apr",
+				"May",
+				"Jun",
+				"Jul",
+				"Aug",
+				"Sep",
+				"Oct",
+			],
+			datasets: [
+				{
+				label: "Import Value",
+				data: [
+					210, 220, 180, 300, 160, 250, 280, 337.689, 260, 310, 120, 100,
+					50,
+				], // valores simulando os picos e quedas
+				borderColor: "#8b5cf6",
+				fill: true,
+				tension: 0.3,
+				pointBackgroundColor: "#8b5cf6",
+				pointBorderColor: "#ffffff",
+				pointBorderWidth: 2,
+				pointRadius: 4,
+				pointHoverRadius: 6,
+				borderWidth: 2.5,
+				backgroundColor: function (context) {
+					const chart = context.chart;
+					const { ctx, chartArea } = chart;
+					if (!chartArea) return null;
+					const gradient = ctx.createLinearGradient(
+					0,
+					chartArea.top,
+					0,
+					chartArea.bottom
+					);
+					gradient.addColorStop(0, "rgba(139, 92, 246, 0.3)");
+					gradient.addColorStop(1, "rgba(139, 92, 246, 0)");
+					return gradient;
+				},
+				},
+			],
+			},
+			options: {
+			responsive: true,
+			maintainAspectRatio: false,
+			plugins: {
+				legend: { display: false },
+				tooltip: { enabled: false },
+			},
+			scales: {
+				x: {
+				grid: { display: false },
+				ticks: { display: true, color: "#999", font: { size: 10 } },
+				},
+				y: {
+				display: true,
+				grid: {
+					display: false,
+					drawBorder: false, // Remove a linha do eixo Y
+				},
+				ticks: {
+					callback: function (value) {
+					if (value === 0) return "0";
+					if (value === 100) return "100B";
+					if (value === 200) return "200B";
+					if (value === 300) return "300B";
+					if (value === 400) return "400B";
+					return "";
+					},
+					color: "#999",
+					font: { size: 12 },
+					padding: 5,
+				},
+				title: {
+					display: true,
+					text: "USD",
+					color: "#999",
+					font: { size: 12 },
+					padding: { top: 0, bottom: 0 },
+					align: "center",
+					rotation: -90,
+				},
+				min: 0,
+				max: 400,
+				},
+			},
+			elements: {
+				point: {
+				hoverRadius: 6,
+				},
+			},
+			interaction: {
+				intersect: false,
+				mode: "index",
+			},
+			layout: {
+				padding: {
+				left: 10,
+				right: 10,
+				top: 20,
+				bottom: 0,
+				},
+			},
+			},
+		});
+		Chart.register({
+			id: "customMarker",
+			afterDatasetsDraw(chart) {
+			const {
+				ctx,
+				chartArea: { left, right, top, bottom },
+				scales: { x, y },
+			} = chart;
+			const dataset = chart.data.datasets[0].data;
+			const labels = chart.data.labels;
+
+			// Encontrar o ponto com valor 337.689 e o mês 'May'
+			let targetValue = 337.689;
+			let targetMonthIndex = labels.indexOf("May");
+			let targetXPos = x.getPixelForValue(targetMonthIndex);
+			let targetYPos = y.getPixelForValue(targetValue);
+
+			// Linha pontilhada vertical
+			ctx.save();
+			ctx.beginPath();
+			ctx.setLineDash([5, 5]);
+			ctx.moveTo(targetXPos, top);
+			ctx.lineTo(targetXPos, bottom);
+			ctx.strokeStyle = "rgba(139, 92, 246, 0.7)";
+			ctx.lineWidth = 1.5;
+			ctx.stroke();
+			ctx.restore();
+
+			// Balão de valor
+			ctx.font =
+				'600 12px "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+			ctx.fillStyle = "#fff";
+			const text =
+				targetValue.toLocaleString("en-US", {
+				minimumFractionDigits: 0,
+				maximumFractionDigits: 0,
+				}) + " USD";
+			const textWidth = ctx.measureText(text).width + 12; // Aumentar um pouco o padding
+			const textHeight = 20;
+			const rectHeight = 24; // Altura do retângulo do balão
+			const rectY = targetYPos - rectHeight - 5; // Posição Y do retângulo (acima do ponto)
+			const rectX = targetXPos - textWidth / 2; // Posição X do retângulo
+
+			ctx.fillStyle = "#8b5cf6"; // Cor do fundo do balão
+			ctx.fillRect(rectX, rectY, textWidth, rectHeight);
+
+			// Desenhar a "cauda" do balão
+			ctx.beginPath();
+			ctx.moveTo(targetXPos, targetYPos - 5); // Ponto de partida na parte inferior do balão
+			ctx.lineTo(targetXPos - 5, targetYPos - rectHeight - 5 + rectHeight); // Canto esquerdo da base
+			ctx.lineTo(targetXPos + 5, targetYPos - rectHeight - 5 + rectHeight); // Canto direito da base
+			ctx.closePath();
+			ctx.fill();
+
+			ctx.fillStyle = "#fff"; // Cor do texto
+			ctx.fillText(text, rectX + 6, rectY + 16); // Posição do texto dentro do balão
+			},
+		});
+		</script>
+
+	</body>
+
+
