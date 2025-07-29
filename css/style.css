@@ -123,3 +123,10 @@ body {
     color: #fff !important;
     background-color: #8b5cf6 !important;
 }
+
+.btn-outline-primary:hover {
+    border-color: #fff !important;
+    background-color: #8b5cf6 !important;
+}
+
+
